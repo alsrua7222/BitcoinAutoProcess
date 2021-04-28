@@ -29,5 +29,3 @@
 ![img](./image/6.PNG/)
 - 7
 ![img](./image/7.PNG/)
-- 8
-![img](./image/8.PNG/)
