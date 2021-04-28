@@ -15,8 +15,14 @@
 - 0
 ![img](./image/0.PNG/)
 - 1
+![img](./image/1.PNG/)
 - 2
+![img](./image/2.PNG/)
 - 3
+![img](./image/3.PNG/)
 - 4
+![img](./image/4.PNG/)
 - 5
+![img](./image/5.PNG/)
 - 6
+![img](./image/6.PNG/)
