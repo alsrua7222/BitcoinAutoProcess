@@ -20,3 +20,6 @@ Stack: Python, Telegram API, Upbit API, Binance API, Command Line Interface, Req
    - 1.0.3
       - Change Indonesia API to Binance API
       - add method getERate(from, to): return json() or None
+   - 1.0.4
+      - Ubit API or Binance API Issue whthin Try~Catch.
+      - OOP add.
