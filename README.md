@@ -12,6 +12,7 @@ Stack: Python, Telegram API, Upbit API, Binance API, Command Line Interface, Req
 - Version
    - 1.0.5
       - Modify ERate RealTime
+      - Visualize the Update time
    - 1.0.4
       - Ubit API or Binance API Issue whthin Try~Catch.
       - OOP add.
