@@ -10,16 +10,18 @@ Stack: Python, Telegram API, Upbit API, Binance API, Command Line Interface, Req
 ---
 
 - Version
-   - 1.0.0(Beta)
-      - ProtoType
-      - Convert Indonesia to Korea
-   - 1.0.1
-      - GUI(Graphic User Interface)
-   - 1.0.2
-      - CLI(Command Line Interface)
-   - 1.0.3
-      - Change Indonesia API to Binance API
-      - add method getERate(from, to): return json() or None
+   - 1.0.5
+      - Modify ERate RealTime
    - 1.0.4
       - Ubit API or Binance API Issue whthin Try~Catch.
       - OOP add.
+   - 1.0.3
+      - Change Indonesia API to Binance API
+      - add method getERate(from, to): return json() or None
+   - 1.0.2
+      - CLI(Command Line Interface)
+   - 1.0.1
+      - GUI(Graphic User Interface)
+   - 1.0.0(Beta)
+      - ProtoType
+      - Convert Indonesia to Korea
