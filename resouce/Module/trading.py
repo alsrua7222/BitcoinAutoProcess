@@ -7,6 +7,40 @@ import ccxt
 # https://wikidocs.net/31065
 # https://wikidocs.net/129900
 
+# binance status
+# res['info']['status']
+# 'FILLED' => 포지션 상태.
+# 'NEW' => 오픈 오더 상태. 즉, 포지션 들어가기 전.
+
+def getOpenOrders(instace, market):
+    try:
+        res = None
+        if isinstance(instace, ccxt.upbit):
+            res = instace.fetch_open_orders(market + "/KRW")
+        else:
+            res = instace.fetch_open_orders(market + "/USDT")
+    except Exception as e:
+        print(e)
+        print("getOpenOrders")
+        return None
+
+    return res
+
+
+def getClosePrice(instance, market):
+    try:
+        res = None
+        if isinstance(instance, ccxt.upbit):
+            res = instance.fetch_ticker(market + "/KRW")
+        else:
+            res = instance.fetch_ticker(market + "/USDT")
+    except Exception as e:
+        print(e)
+        print("getClosePrice")
+        return None
+
+    return res['close']
+
 
 def cancelOrder(instance, order, market):
     try:
@@ -22,6 +56,7 @@ def cancelOrder(instance, order, market):
 
     return res
 
+
 def getOrderCheck(instance, order, market):
     try:
         res = None
@@ -35,17 +70,19 @@ def getOrderCheck(instance, order, market):
         return None
     return res
 
-def Sell(instance, market, amounts, price, **kwargs):
+
+def Sell(instance, market, amounts, price, params: dict = {}):
     try:
         res = None
         if isinstance(instance, ccxt.upbit):
             if price != -1:
-                res = instance.create_limit_sell_order(market + "/KRW", amounts, price, {'execInst': 'ParticipateDoNotInitiate'})
+                res = instance.create_limit_sell_order(market + "/KRW", amounts, price,
+                                                       {'execInst': 'ParticipateDoNotInitiate'})
             else:
                 res = instance.create_market_sell_order(market + "/KRW", amounts)
         else:
             if price != -1:
-                res = instance.create_limit_sell_order(market + "/USDT", amounts, price, kwargs)
+                res = instance.create_limit_sell_order(market + "/USDT", amounts, price, params)
             else:
                 res = instance.create_market_sell_order(market + "/USDT", amounts)
 
@@ -57,17 +94,19 @@ def Sell(instance, market, amounts, price, **kwargs):
     res['market'] = market
     return res
 
-def Buy(instance, market, amounts, price, **kwargs):
+
+def Buy(instance, market, amounts, price, params: dict = {}):
     try:
         res = None
         if isinstance(instance, ccxt.upbit):
             if price != -1:
-                res = instance.create_limit_buy_order(market + "/KRW", amounts, price, {'execInst': 'ParticipateDoNotInitiate'})
+                res = instance.create_limit_buy_order(market + "/KRW", amounts, price,
+                                                      {'execInst': 'ParticipateDoNotInitiate'})
             else:
                 res = instance.create_market_buy_order(market + "/KRW", amounts)
         else:
             if price != -1:
-                res = instance.create_limit_buy_order(market + "/USDT", amounts, price, kwargs)
+                res = instance.create_limit_buy_order(market + "/USDT", amounts, price, params)
             else:
                 res = instance.create_market_buy_order(market + "/USDT", amounts)
     except Exception as e:
@@ -76,6 +115,7 @@ def Buy(instance, market, amounts, price, **kwargs):
         return None
 
     return res
+
 
 def getOrderBookSide(instance, market, limit, status):
     try:
@@ -92,6 +132,7 @@ def getOrderBookSide(instance, market, limit, status):
         print(e)
         print("getOrderBookside")
         return None
+
 
 def getOrderBook(instance, market, limit):
     try:
@@ -113,6 +154,7 @@ def getOrderBook(instance, market, limit):
 
     return res
 
+
 def getInstanceUpbit(apiKey, secKey):
     try:
         res = None
@@ -125,6 +167,7 @@ def getInstanceUpbit(apiKey, secKey):
         return None
 
     return res
+
 
 def getInstanceBinance(apiKey, secKey):
     try:
