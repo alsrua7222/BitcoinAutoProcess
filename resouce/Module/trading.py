@@ -1,4 +1,6 @@
 import ccxt
+import uuid, hashlib, requests
+from urllib.parse import urlencode
 
 
 # 사용 설명서
@@ -79,7 +81,8 @@ def Sell(instance, market, amounts, price, params: dict = {}):
                 res = instance.create_limit_sell_order(market + "/KRW", amounts, price,
                                                        {'execInst': 'ParticipateDoNotInitiate'})
             else:
-                res = instance.create_market_sell_order(market + "/KRW", amounts)
+                bid = getOrderBook(instance, market, 1)['bids'][0][0]
+                res = instance.create_limit_sell_order(market + "/KRW", amounts, bid)
         else:
             if price != -1:
                 res = instance.create_limit_sell_order(market + "/USDT", amounts, price, params)
@@ -89,10 +92,10 @@ def Sell(instance, market, amounts, price, params: dict = {}):
     except Exception as e:
         print(e)
         print("Sell")
-        return None
+        return [False, e]
 
     res['market'] = market
-    return res
+    return [True, res]
 
 
 def Buy(instance, market, amounts, price, params: dict = {}):
@@ -103,7 +106,8 @@ def Buy(instance, market, amounts, price, params: dict = {}):
                 res = instance.create_limit_buy_order(market + "/KRW", amounts, price,
                                                       {'execInst': 'ParticipateDoNotInitiate'})
             else:
-                res = instance.create_market_buy_order(market + "/KRW", amounts)
+                ask = getOrderBook(instance, market, 1)['asks'][0][0]
+                res = instance.create_limit_buy_order(market + "/KRW", amounts, ask)
         else:
             if price != -1:
                 res = instance.create_limit_buy_order(market + "/USDT", amounts, price, params)
@@ -112,9 +116,9 @@ def Buy(instance, market, amounts, price, params: dict = {}):
     except Exception as e:
         print(e)
         print("Buy")
-        return None
+        return [False, e]
 
-    return res
+    return [True, res]
 
 
 def getOrderBookSide(instance, market, limit, status):
