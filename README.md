@@ -10,11 +10,15 @@ Stack: Python, Telegram API, Upbit API, Binance API, Command Line Interface, Req
 ---
 
 - 다음 패치 계획.
-   - 1.1.0
-      - 셋팅파일 GUI로 셋팅.
-      - 자동매매를 위해 매매 모듈 구현.
+   - 1.1.1
+      - 셋팅파일 GUI로 쉽게 조작하기.
 
 - Version
+   - 1.1.0
+      - 최적화 효율을 더 내기 위해 멀티쓰레딩 추가.
+      - 자동 매매 기능 추가.
+         - 테스트 모드 기능 추가.
+         - 셋팅 파일 입력 확장.
    - 1.0.5
       - Modify ERate RealTime
       - Visualize the Update time
