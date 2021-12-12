@@ -32,3 +32,4 @@ True를 설정한 후, 해당 코인의 거래 활성화 ON을 해서 실행하�
 ---
 
 # 작동 원리
+![Logic](./Untitled_Diagram.png)
