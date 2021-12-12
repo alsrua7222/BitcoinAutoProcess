@@ -12,6 +12,10 @@
 
 ---
 
+# [API 발급 받는 방법](https://github.com/alsrua7222/BitcoinAutoProcess/tree/main/API)
+
+---
+
 # Setting.txt
 ![1_1_0_1](./1_1_0_1.png)
 ### [세부 사항]
