@@ -17,8 +17,17 @@
 ---
 
 # Setting.txt
-![1_1_0_1](./1_1_0_1.png)
-### [세부 사항]
+![1](./1_1_0_1.png)
+### [세부 사항](https://github.com/alsrua7222/BitcoinAutoProcess/tree/main/resouce/Setting)
+
+---
+
+# 테스트 모드(거래 활성화 ON)
+## 필수 입력
+Upbit, Binance API 무조건 입력하셔야 합니다.   
+## 셋팅 방법
+![2](./1_1_0_2.png)   
+True를 설정한 후, 해당 코인의 거래 활성화 ON을 해서 실행하면 됩니다.   
 
 ---
 
