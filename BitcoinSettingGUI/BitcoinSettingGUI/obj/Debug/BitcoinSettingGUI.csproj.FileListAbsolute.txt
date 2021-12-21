@@ -1,0 +1,16 @@
+C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\bin\Debug\BitcoinSettingGUI.exe.config
+C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\bin\Debug\BitcoinSettingGUI.exe
+C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\bin\Debug\BitcoinSettingGUI.pdb
+C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\bin\Debug\MetroFramework.Design.dll
+C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\bin\Debug\MetroFramework.dll
+C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\obj\Debug\BitcoinSettingGUI.csprojAssemblyReference.cache
+C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\obj\Debug\BitcoinSettingGUI.Properties.Resources.resources
+C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\obj\Debug\BitcoinSettingGUI.csproj.GenerateResource.cache
+C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\obj\Debug\BitcoinSettingGUI.csproj.CoreCompileInputs.cache
+C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\obj\Debug\BitcoinSettingGUI.csproj.CopyComplete
+C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\obj\Debug\BitcoinSettingGUI.exe
+C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\obj\Debug\BitcoinSettingGUI.pdb
+C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\obj\Debug\BitcoinSettingGUI.Form2.resources
+C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\obj\Debug\BitcoinSettingGUI.Form1.resources
+C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\obj\Debug\BitcoinSettingGUI.ProgressSpinnerDynamic.resources
