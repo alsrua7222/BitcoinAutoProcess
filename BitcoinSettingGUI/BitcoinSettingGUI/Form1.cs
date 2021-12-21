@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using System.Threading;
-
+/*
+* https://www.youtube.com/watch?v=BtOEztT1Qzk
+* 따라하기 중.
+*/
 namespace BitcoinSettingGUI
 {
     public partial class Form1 : MetroFramework.Forms.MetroForm
