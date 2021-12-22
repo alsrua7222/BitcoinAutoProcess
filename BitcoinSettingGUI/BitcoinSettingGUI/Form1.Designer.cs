@@ -28,163 +28,161 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.metroPanelMenu = new MetroFramework.Controls.MetroPanel();
-            this.metroButton3 = new MetroFramework.Controls.MetroButton();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroPanelMenuTop = new MetroFramework.Controls.MetroPanel();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.metroLabelTitle = new MetroFramework.Controls.MetroLabel();
-            this.metroPanelMenu.SuspendLayout();
-            this.metroPanel1.SuspendLayout();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panelMenuTop = new System.Windows.Forms.Panel();
+            this.panelMenuTopName = new System.Windows.Forms.Label();
+            this.panelTitle = new System.Windows.Forms.Panel();
+            this.panelTitleName = new System.Windows.Forms.Label();
+            this.panelDesktop = new System.Windows.Forms.Panel();
+            this.panelMenu.SuspendLayout();
+            this.panelMenuTop.SuspendLayout();
+            this.panelTitle.SuspendLayout();
             this.SuspendLayout();
             // 
-            // metroPanelMenu
+            // panelMenu
             // 
-            this.metroPanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.metroPanelMenu.Controls.Add(this.metroButton3);
-            this.metroPanelMenu.Controls.Add(this.metroButton2);
-            this.metroPanelMenu.Controls.Add(this.metroButton1);
-            this.metroPanelMenu.Controls.Add(this.metroPanelMenuTop);
-            this.metroPanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.metroPanelMenu.HorizontalScrollbarBarColor = true;
-            this.metroPanelMenu.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanelMenu.HorizontalScrollbarSize = 10;
-            this.metroPanelMenu.Location = new System.Drawing.Point(10, 30);
-            this.metroPanelMenu.Name = "metroPanelMenu";
-            this.metroPanelMenu.Size = new System.Drawing.Size(200, 559);
-            this.metroPanelMenu.TabIndex = 9;
-            this.metroPanelMenu.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroPanelMenu.UseCustomBackColor = true;
-            this.metroPanelMenu.UseCustomForeColor = true;
-            this.metroPanelMenu.VerticalScrollbarBarColor = true;
-            this.metroPanelMenu.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanelMenu.VerticalScrollbarSize = 10;
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelMenu.Controls.Add(this.button3);
+            this.panelMenu.Controls.Add(this.button2);
+            this.panelMenu.Controls.Add(this.button1);
+            this.panelMenu.Controls.Add(this.panelMenuTop);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(10, 30);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(200, 559);
+            this.panelMenu.TabIndex = 0;
             // 
-            // metroButton3
+            // button3
             // 
-            this.metroButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.metroButton3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.metroButton3.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton3.ForeColor = System.Drawing.Color.White;
-            this.metroButton3.Location = new System.Drawing.Point(0, 188);
-            this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(200, 44);
-            this.metroButton3.TabIndex = 5;
-            this.metroButton3.Text = "Setting - Coin";
-            this.metroButton3.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroButton3.UseCustomBackColor = true;
-            this.metroButton3.UseSelectable = true;
-            this.metroButton3.UseStyleColors = true;
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("휴먼둥근헤드라인", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(0, 250);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(200, 75);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "2. 세부사항";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // metroButton2
+            // button2
             // 
-            this.metroButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.metroButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.metroButton2.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton2.ForeColor = System.Drawing.Color.White;
-            this.metroButton2.Location = new System.Drawing.Point(0, 144);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(200, 44);
-            this.metroButton2.TabIndex = 4;
-            this.metroButton2.Text = "Setting - Token, API";
-            this.metroButton2.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroButton2.UseCustomBackColor = true;
-            this.metroButton2.UseSelectable = true;
-            this.metroButton2.UseStyleColors = true;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("휴먼둥근헤드라인", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(0, 175);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(200, 75);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "1. Token, API 설정";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // metroButton1
+            // button1
             // 
-            this.metroButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.metroButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton1.ForeColor = System.Drawing.Color.White;
-            this.metroButton1.Location = new System.Drawing.Point(0, 100);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(200, 44);
-            this.metroButton1.TabIndex = 3;
-            this.metroButton1.Text = "요약";
-            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroButton1.UseCustomBackColor = true;
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.UseStyleColors = true;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("휴먼둥근헤드라인", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(0, 100);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 75);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "요약";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // metroPanelMenuTop
+            // panelMenuTop
             // 
-            this.metroPanelMenuTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(42)))));
-            this.metroPanelMenuTop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.metroPanelMenuTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.metroPanelMenuTop.HorizontalScrollbarBarColor = true;
-            this.metroPanelMenuTop.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanelMenuTop.HorizontalScrollbarSize = 10;
-            this.metroPanelMenuTop.Location = new System.Drawing.Point(0, 0);
-            this.metroPanelMenuTop.Name = "metroPanelMenuTop";
-            this.metroPanelMenuTop.Size = new System.Drawing.Size(200, 100);
-            this.metroPanelMenuTop.TabIndex = 2;
-            this.metroPanelMenuTop.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroPanelMenuTop.UseCustomBackColor = true;
-            this.metroPanelMenuTop.UseStyleColors = true;
-            this.metroPanelMenuTop.VerticalScrollbarBarColor = false;
-            this.metroPanelMenuTop.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanelMenuTop.VerticalScrollbarSize = 10;
+            this.panelMenuTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panelMenuTop.Controls.Add(this.panelMenuTopName);
+            this.panelMenuTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMenuTop.Location = new System.Drawing.Point(0, 0);
+            this.panelMenuTop.Name = "panelMenuTop";
+            this.panelMenuTop.Size = new System.Drawing.Size(200, 100);
+            this.panelMenuTop.TabIndex = 0;
             // 
-            // metroPanel1
+            // panelMenuTopName
             // 
-            this.metroPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(84)))));
-            this.metroPanel1.Controls.Add(this.metroLabelTitle);
-            this.metroPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(210, 30);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(719, 100);
-            this.metroPanel1.TabIndex = 10;
-            this.metroPanel1.UseCustomBackColor = true;
-            this.metroPanel1.UseStyleColors = true;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            this.panelMenuTopName.AutoSize = true;
+            this.panelMenuTopName.Font = new System.Drawing.Font("Mongolian Baiti", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.panelMenuTopName.ForeColor = System.Drawing.Color.GhostWhite;
+            this.panelMenuTopName.Location = new System.Drawing.Point(34, 37);
+            this.panelMenuTopName.Name = "panelMenuTopName";
+            this.panelMenuTopName.Size = new System.Drawing.Size(135, 22);
+            this.panelMenuTopName.TabIndex = 0;
+            this.panelMenuTopName.Text = "BitcoinSetting";
             // 
-            // metroLabelTitle
+            // panelTitle
             // 
-            this.metroLabelTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.metroLabelTitle.AutoSize = true;
-            this.metroLabelTitle.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabelTitle.Location = new System.Drawing.Point(337, 37);
-            this.metroLabelTitle.Name = "metroLabelTitle";
-            this.metroLabelTitle.Size = new System.Drawing.Size(43, 25);
-            this.metroLabelTitle.TabIndex = 2;
-            this.metroLabelTitle.Text = "Title";
-            this.metroLabelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroLabelTitle.UseCustomBackColor = true;
-            this.metroLabelTitle.UseStyleColors = true;
+            this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.panelTitle.Controls.Add(this.panelTitleName);
+            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitle.Location = new System.Drawing.Point(210, 30);
+            this.panelTitle.Name = "panelTitle";
+            this.panelTitle.Size = new System.Drawing.Size(719, 100);
+            this.panelTitle.TabIndex = 1;
+            // 
+            // panelTitleName
+            // 
+            this.panelTitleName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelTitleName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.panelTitleName.Font = new System.Drawing.Font("휴먼둥근헤드라인", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.panelTitleName.ForeColor = System.Drawing.Color.White;
+            this.panelTitleName.Location = new System.Drawing.Point(186, 22);
+            this.panelTitleName.Name = "panelTitleName";
+            this.panelTitleName.Size = new System.Drawing.Size(368, 53);
+            this.panelTitleName.TabIndex = 0;
+            this.panelTitleName.Text = "요약";
+            this.panelTitleName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(210, 130);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(719, 459);
+            this.panelDesktop.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(939, 599);
-            this.Controls.Add(this.metroPanel1);
-            this.Controls.Add(this.metroPanelMenu);
+            this.Controls.Add(this.panelDesktop);
+            this.Controls.Add(this.panelTitle);
+            this.Controls.Add(this.panelMenu);
             this.DisplayHeader = false;
+            this.MinimumSize = new System.Drawing.Size(600, 400);
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(10, 30, 10, 10);
-            this.metroPanelMenu.ResumeLayout(false);
-            this.metroPanel1.ResumeLayout(false);
-            this.metroPanel1.PerformLayout();
+            this.panelMenu.ResumeLayout(false);
+            this.panelMenuTop.ResumeLayout(false);
+            this.panelMenuTop.PerformLayout();
+            this.panelTitle.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private MetroFramework.Controls.MetroPanel metroPanelMenu;
-        private MetroFramework.Controls.MetroPanel metroPanelMenuTop;
-        private MetroFramework.Controls.MetroButton metroButton1;
-        private MetroFramework.Controls.MetroButton metroButton3;
-        private MetroFramework.Controls.MetroButton metroButton2;
-        private MetroFramework.Controls.MetroPanel metroPanel1;
-        private MetroFramework.Controls.MetroLabel metroLabelTitle;
+
+        private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panelMenuTop;
+        private System.Windows.Forms.Panel panelTitle;
+        private System.Windows.Forms.Label panelMenuTopName;
+        private System.Windows.Forms.Label panelTitleName;
+        private System.Windows.Forms.Panel panelDesktop;
     }
 }
 
