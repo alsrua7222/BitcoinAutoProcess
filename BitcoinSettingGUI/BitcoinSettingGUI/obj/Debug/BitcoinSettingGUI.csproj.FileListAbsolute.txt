@@ -14,3 +14,5 @@ C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\Bitcoi
 C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\obj\Debug\BitcoinSettingGUI.Form2.resources
 C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\obj\Debug\BitcoinSettingGUI.Form1.resources
 C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\obj\Debug\BitcoinSettingGUI.ProgressSpinnerDynamic.resources
+C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\obj\Debug\BitcoinSettingGUI.Forms.Home.resources
+C:\Users\KMK\source\repos\alsrua7222\BitcoinAutoProcess\BitcoinSettingGUI\BitcoinSettingGUI\obj\Debug\BitcoinSettingGUI.Forms.API.resources

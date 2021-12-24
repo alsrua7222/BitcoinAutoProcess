@@ -50,9 +50,9 @@
             this.panelMenu.Controls.Add(this.button1);
             this.panelMenu.Controls.Add(this.panelMenuTop);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(10, 30);
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 559);
+            this.panelMenu.Size = new System.Drawing.Size(200, 861);
             this.panelMenu.TabIndex = 0;
             // 
             // button3
@@ -126,9 +126,9 @@
             this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
             this.panelTitle.Controls.Add(this.panelTitleName);
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitle.Location = new System.Drawing.Point(210, 30);
+            this.panelTitle.Location = new System.Drawing.Point(200, 0);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(719, 100);
+            this.panelTitle.Size = new System.Drawing.Size(1074, 100);
             this.panelTitle.TabIndex = 1;
             // 
             // panelTitleName
@@ -137,7 +137,7 @@
             this.panelTitleName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.panelTitleName.Font = new System.Drawing.Font("휴먼둥근헤드라인", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.panelTitleName.ForeColor = System.Drawing.Color.White;
-            this.panelTitleName.Location = new System.Drawing.Point(186, 22);
+            this.panelTitleName.Location = new System.Drawing.Point(364, 22);
             this.panelTitleName.Name = "panelTitleName";
             this.panelTitleName.Size = new System.Drawing.Size(368, 53);
             this.panelTitleName.TabIndex = 0;
@@ -147,23 +147,21 @@
             // panelDesktop
             // 
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(210, 130);
+            this.panelDesktop.Location = new System.Drawing.Point(200, 100);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(719, 459);
+            this.panelDesktop.Size = new System.Drawing.Size(1074, 761);
             this.panelDesktop.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(939, 599);
+            this.ClientSize = new System.Drawing.Size(1274, 861);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelMenu);
-            this.DisplayHeader = false;
-            this.MinimumSize = new System.Drawing.Size(600, 400);
+            this.MinimumSize = new System.Drawing.Size(1290, 900);
             this.Name = "Form1";
-            this.Padding = new System.Windows.Forms.Padding(10, 30, 10, 10);
             this.panelMenu.ResumeLayout(false);
             this.panelMenuTop.ResumeLayout(false);
             this.panelMenuTop.PerformLayout();

@@ -10,13 +10,14 @@ using System.Windows.Forms;
 
 using System.Threading;
 using MetroFramework.Controls;
+using System.Diagnostics;
 /*
 * https://www.youtube.com/watch?v=BtOEztT1Qzk
 * 따라하기 중.
 */
 namespace BitcoinSettingGUI
 {
-    public partial class Form1 : MetroFramework.Forms.MetroForm
+    public partial class Form1 : Form
     {
         private List<object> settingDatas;
         private Button currentButton;
@@ -24,10 +25,16 @@ namespace BitcoinSettingGUI
         private Random random;
         private int tempIndex;
 
+        protected PerformanceCounter NetCounter;
         public Form1()
         {
             InitializeComponent();
             random = new Random();
+            foreach(string s in Network.GetUseAbleLANCards())
+            {
+                Console.WriteLine(s);
+            }
+            NetCounter = Network.ShowTheNetworkSpeed();
             //Form2 form2 = new Form2();
             //form2.Show();
             //this.settingDatas = form2.getSettingData();
@@ -117,12 +124,14 @@ namespace BitcoinSettingGUI
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            //ActivateButton(sender);
+            OpenChildForm(new Forms.Home(this.NetCounter), sender);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            //ActivateButton(sender);
+            OpenChildForm(new Forms.API(), sender);
         }
 
         private void button3_Click(object sender, EventArgs e)
