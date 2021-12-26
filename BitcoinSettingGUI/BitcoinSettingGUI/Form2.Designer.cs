@@ -28,44 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.progressSpinnerDynamic1 = new BitcoinSettingGUI.ProgressSpinnerDynamic();
+            this.buttonNewCreate = new System.Windows.Forms.Button();
+            this.buttonLoad = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // metroLabel1
+            // buttonNewCreate
             // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(150, 350);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(83, 19);
-            this.metroLabel1.TabIndex = 1;
-            this.metroLabel1.Text = "Hello World!";
+            this.buttonNewCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(74)))));
+            this.buttonNewCreate.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonNewCreate.Font = new System.Drawing.Font("휴먼둥근헤드라인", 13F);
+            this.buttonNewCreate.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonNewCreate.Location = new System.Drawing.Point(20, 30);
+            this.buttonNewCreate.Margin = new System.Windows.Forms.Padding(10);
+            this.buttonNewCreate.Name = "buttonNewCreate";
+            this.buttonNewCreate.Size = new System.Drawing.Size(200, 200);
+            this.buttonNewCreate.TabIndex = 3;
+            this.buttonNewCreate.Text = "신규 생성";
+            this.buttonNewCreate.UseVisualStyleBackColor = false;
+            this.buttonNewCreate.Click += new System.EventHandler(this.buttonNewCreate_Click);
             // 
-            // progressSpinnerDynamic1
+            // buttonLoad
             // 
-            this.progressSpinnerDynamic1.Location = new System.Drawing.Point(50, 50);
-            this.progressSpinnerDynamic1.Name = "progressSpinnerDynamic1";
-            this.progressSpinnerDynamic1.Size = new System.Drawing.Size(300, 300);
-            this.progressSpinnerDynamic1.TabIndex = 2;
+            this.buttonLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(74)))));
+            this.buttonLoad.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonLoad.Font = new System.Drawing.Font("휴먼둥근헤드라인", 13F);
+            this.buttonLoad.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonLoad.Location = new System.Drawing.Point(280, 30);
+            this.buttonLoad.Margin = new System.Windows.Forms.Padding(10);
+            this.buttonLoad.Name = "buttonLoad";
+            this.buttonLoad.Size = new System.Drawing.Size(200, 200);
+            this.buttonLoad.TabIndex = 4;
+            this.buttonLoad.Text = "자동 열기";
+            this.buttonLoad.UseVisualStyleBackColor = false;
+            this.buttonLoad.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 600);
-            this.Controls.Add(this.progressSpinnerDynamic1);
-            this.Controls.Add(this.metroLabel1);
+            this.ClientSize = new System.Drawing.Size(500, 250);
+            this.ControlBox = false;
+            this.Controls.Add(this.buttonLoad);
+            this.Controls.Add(this.buttonNewCreate);
+            this.DisplayHeader = false;
             this.Name = "Form2";
+            this.Padding = new System.Windows.Forms.Padding(20, 30, 20, 20);
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.TopMost = true;
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private MetroFramework.Controls.MetroLabel metroLabel1;
-        private ProgressSpinnerDynamic progressSpinnerDynamic1;
+        private System.Windows.Forms.Button buttonNewCreate;
+        private System.Windows.Forms.Button buttonLoad;
     }
 }

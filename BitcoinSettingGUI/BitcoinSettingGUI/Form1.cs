@@ -19,7 +19,8 @@ namespace BitcoinSettingGUI
 {
     public partial class Form1 : Form
     {
-        private List<object> settingDatas;
+        private Struct.SettingData settingDatas;
+
         private Button currentButton;
         private Form activateForm;
         private Random random;
@@ -29,25 +30,27 @@ namespace BitcoinSettingGUI
         public Form1()
         {
             InitializeComponent();
+
             random = new Random();
+
             foreach(string s in Network.GetUseAbleLANCards())
             {
                 Console.WriteLine(s);
             }
             NetCounter = Network.ShowTheNetworkSpeed();
-            //Form2 form2 = new Form2();
-            //form2.Show();
-            //this.settingDatas = form2.getSettingData();
-            //Delay(5000);
-            //form2.Close();
-            //Console.WriteLine(this.settingDatas);
-            //this.metroTextBox1.AppendText(this.settingDatas[0].ToString() + "\n");
-            //foreach (string str in this.settingDatas[1] as string[])
-            //{
-            //    this.metroTextBox1.AppendText(str + "\n");
-            //}
-        }
 
+            this.settingDatas = new Struct.SettingData();
+        }
+        public Form1(Struct.SettingData data)
+        {
+            InitializeComponent();
+
+            random = new Random();
+
+            NetCounter = Network.ShowTheNetworkSpeed();
+
+            this.settingDatas = data;
+        }
         private Color SelectThemeColor()
         {
             int index = random.Next(ThemeColor.ColorList.Count);

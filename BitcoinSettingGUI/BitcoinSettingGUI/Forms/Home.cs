@@ -21,8 +21,32 @@ namespace BitcoinSettingGUI.Forms
         public Home(PerformanceCounter netcounter)
         {
             InitializeComponent();
-            this.NetCounter = netcounter;
-            this.labelNetworkName.Text = netcounter.InstanceName;
+            try
+            {
+                this.NetCounter = netcounter;
+                this.labelNetworkName.Text = netcounter.InstanceName;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                this.labelNetworkName.Text = "Not Found the LAN Cards.";
+            }
+        }
+        
+        private void setSuccessFont(Label label)
+        {
+            label.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label.ForeColor = System.Drawing.Color.Lime;
+            label.Text = "O";
+            return;
+        }
+
+        private void setFailFont(Label label)
+        {
+            label.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label.ForeColor = System.Drawing.Color.Red;
+            label.Text = "X";
+            return;
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -32,19 +56,26 @@ namespace BitcoinSettingGUI.Forms
 
         private void timerNetwork_Tick(object sender, EventArgs e)
         {
-            int value = (int)NetCounter.NextValue();
-            string unit = " ";
-            if (value >= 1e6)
+            try
             {
-                unit += "M";
-                value /= (int)1e6;
+                int value = (int)NetCounter.NextValue();
+                string unit = " ";
+                if (value >= 1e6)
+                {
+                    unit += "M";
+                    value /= (int)1e6;
+                }
+                else if (value >= 1e3)
+                {
+                    unit += "K";
+                    value /= (int)1e3;
+                }
+                this.labelNetwork.Text = value.ToString() + unit + "bps";
             }
-            else if(value >= 1e3)
+            catch (Exception e1)
             {
-                unit += "K";
-                value /= (int)1e3;
+                Console.WriteLine(e1);
             }
-            this.labelNetwork.Text = value.ToString() + unit + "bps";
         }
     }
 }
