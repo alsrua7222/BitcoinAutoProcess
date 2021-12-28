@@ -50,6 +50,8 @@ namespace BitcoinSettingGUI
             NetCounter = Network.ShowTheNetworkSpeed();
 
             this.settingDatas = data;
+
+            Console.WriteLine(data.ToString());
         }
         private Color SelectThemeColor()
         {

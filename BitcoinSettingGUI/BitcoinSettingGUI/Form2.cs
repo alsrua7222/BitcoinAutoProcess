@@ -51,7 +51,7 @@ namespace BitcoinSettingGUI
                 data.TestMode = Boolean.Parse(three[2]);
 
                 data.Data = new List<List<object>>();
-                for(int i = 6; i < tmp.Length - 6; i++)
+                for(int i = 6; i < tmp.Length; i++)
                 {
                     var sub = tmp[i].Split();
                     List<object> tmp2 = new List<object>();
@@ -111,7 +111,7 @@ namespace BitcoinSettingGUI
                 
             }
             this.Hide();
-            Form1 form = new Form1();
+            Form1 form = new Form1(GetSettingStruct(data));
             form.ShowDialog();
             this.Close();
         }
