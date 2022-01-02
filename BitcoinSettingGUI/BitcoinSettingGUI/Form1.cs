@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using System.Threading;
 using MetroFramework.Controls;
 using System.Diagnostics;
+using System.Net;
+using System.IO;
 /*
 * https://www.youtube.com/watch?v=BtOEztT1Qzk
 * 따라하기 중.
@@ -52,6 +54,25 @@ namespace BitcoinSettingGUI
             this.settingDatas = data;
 
             Console.WriteLine(data.ToString());
+
+            IsConnectUrl("https://crix-api-endpoint.upbit.com/v1/crix/candles/minutes/1?code=CRIX.UPBIT.KRW-BTC&count=1");
+            IsConnectUrl("https://www.binance.com/api/v3/klines?limit=1&symbol=BTCUSDT&interval=1m");
+        }
+
+        private bool IsConnectUrl(String url)
+        {
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "GET";
+            var response = (HttpWebResponse)request.GetResponse();
+
+            if (HttpStatusCode.OK == response.StatusCode)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         private Color SelectThemeColor()
         {
