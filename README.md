@@ -12,6 +12,7 @@ Stack: Python, Telegram API, Upbit API, Binance API, Command Line Interface, Req
 - 다음 패치 계획.
    - 1.1.1
       - 셋팅파일 GUI로 쉽게 조작하기 쉽도록 만들기.
+      - 지원 중단.
 
 - Version
    - 1.1.0
